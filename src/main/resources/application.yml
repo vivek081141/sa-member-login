@@ -1,0 +1,21 @@
+server.port: 9966
+spring.profiles: default
+demo.security.jwt:
+  tokenExpirationTime: 20 # Number of minutes
+  refreshTokenExpTime: 60 # Minutes
+  tokenIssuer: http://svlada.com
+  tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
+  
+spring:
+  jpa:
+    database: Oracle
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/xe
+    username: system
+    password: 12345
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+security:
+  user:
+    password: password
