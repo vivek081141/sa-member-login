@@ -50,7 +50,7 @@ public class AuthorizationController {
 
     }
 
-    @RequestMapping(value = "/profile", method = RequestMethod.GET)
+    @RequestMapping(value = "/testt", method = RequestMethod.GET)
     public void getUserProfile(){
         System.out.println("My profile is getting called.");
     }
