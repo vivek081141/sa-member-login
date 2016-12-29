@@ -5,17 +5,31 @@ demo.security.jwt:
   refreshTokenExpTime: 60 # Minutes
   tokenIssuer: http://svlada.com
   tokenSigningKey: xm8EV6Hy5RMFK4EEACIDAwQus
-  
-spring:
-  jpa:
-    database: Oracle
-    hibernate:
-      ddl-auto: update
-  datasource:
-    url: jdbc:oracle:thin:@//localhost:1521/xe
-    username: system
-    password: 12345
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-security:
-  user:
-    password: password
+
+  spring:
+    jpa:
+      database: MYSQL
+      hibernate:
+        ddl-auto: create
+    datasource:
+      url: jdbc:mysql://sql6.freemysqlhosting.net:3306/sql6151383
+      username: sql6151383
+      password: jxnbr5wCR5
+      driver-class-name: com.mysql.jdbc.Driver
+  security:
+    user:
+      password: password
+
+#spring:
+#  jpa:
+#    database: Oracle
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    url: jdbc:oracle:thin:@//localhost:1521/xe
+#    username: system
+#    password: 12345
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#security:
+#  user:
+#    password: password
